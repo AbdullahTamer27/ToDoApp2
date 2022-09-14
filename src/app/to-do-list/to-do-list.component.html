@@ -1,0 +1,20 @@
+<form [formGroup]="form" >
+<div class="border">
+    <div class="header">
+        <label class="heading">Bariza's To Do List</label>
+    </div>
+    <div class="inputPlace" class="form-group">
+        <input formControlName="hi" type="text" id="hi" #hi required minlength="1">
+        <button class="btn btn-primary" [disabled]="form.invalid || hi.value.length===0 " (click)="addItems(hi)">add</button>
+    </div>
+    <ul style="list-style: none;">     
+        <li *ngFor="let item of toDoItems">
+            <div *ngIf="item.valid" id="items">
+                <input type="checkbox" class="checkbox" (click)="changeIsDone(item)">
+                <label class="mytext" [ngStyle]="{'text-decoration-line':item.isDone ? 'line-through':'none'}">{{item.name}}</label>
+                <button class="btn btn-close" id="closeb" (click)="deleteItem(item)"></button>
+            </div>
+        </li>
+    </ul>    
+</div>
+</form>

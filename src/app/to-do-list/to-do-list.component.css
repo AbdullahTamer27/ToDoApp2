@@ -1,0 +1,51 @@
+.border{
+    border-style: solid;
+    border-width: 5px;
+    border-color: grey;
+    background-color: rgb(9, 222, 211);
+    height: inherit;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    font-weight: bolder;
+    width: auto;
+}
+
+#hi{
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#items{
+    border-style: solid;
+    border-width: 5px;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+.mytext{
+    padding-left: inherit;
+    padding-right: inherit;
+    width: auto;
+    height: inherit;
+    font-size: large;
+}
+.checkbox{
+    padding-right: 50px;
+    width: auto;
+
+}
+#closeb{
+    width: auto;
+    padding-left: 50px;
+
+}
